@@ -8,7 +8,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/knightcube/furniture-heaven-ecommerce.svg)](https://github.com/knightcube/furniture-heaven-ecommerce/issues)
 
 ## Live Demo 
-* Deployed here - https://furniture-heaven-ecommerce-7gy9.vercel.app/
+* Deployed here - https://furniture-heaven-ecommerce.vercel.app/
 
 ## What it looks like right now?
 ![Mock up Design](https://github.com/knightcube/furniture-heaven-ecommerce/blob/main/mockups/FurnitureHeaven.gif?raw=true)
