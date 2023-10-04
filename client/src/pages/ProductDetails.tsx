@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import dummyProducts from "../data/DummyData";
 import ProductModel from "../data/models/ProductModel";

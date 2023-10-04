@@ -1,14 +1,10 @@
-import React, { Suspense } from "react";
-import HeaderNav from "../components/HeaderNav";
-import "../styles/LandingPage.css";
-import HeroComponent from "../components/HeroComponent";
+import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import { Box, Stack, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import room from "../assets/room_miniature_1.png";
-import MiniatureModel from "../components/MiniatureModel";
-import { Canvas } from "@react-three/fiber";
-import {  OrbitControls } from "@react-three/drei";
-import FooterComponent from '../components/FooterComponent'
+import MiniatureModel from "./MiniatureModel";
+// import room from "../assets/room_miniature_1.png";
 
 const MiniatureSection = () => {
   return (
@@ -49,9 +45,6 @@ const MiniatureSection = () => {
         <Canvas>
           <Suspense
             fallback={null}
-            style={{
-              backgroundColor: "#111a21",
-            }}
           >
             <ambientLight intensity={1.75} />
             <MiniatureModel scale={2} />
@@ -70,17 +63,4 @@ const MiniatureSection = () => {
   );
 };
 
-const LandingPage = () => {
-  return (
-    <Stack gap={10} >
-      <div className="hero-section">
-        <HeaderNav></HeaderNav>
-        <HeroComponent />
-      </div>
-      <MiniatureSection />
-      <FooterComponent/>
-    </Stack>
-  );
-};
-
-export default LandingPage;
+export default MiniatureSection;
