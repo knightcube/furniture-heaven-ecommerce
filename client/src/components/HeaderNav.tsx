@@ -22,7 +22,7 @@ const HeaderNav = () => {
         </h3>
         <h3>About</h3>
         <h3>Contact</h3>
-        <Button variant="contained">Sign in</Button>
+        <Button variant="contained"><Link to='/login' style={{textDecoration:'none', color:'white'}}>Sign in</Link></Button>
       </div>
     </nav>
   );

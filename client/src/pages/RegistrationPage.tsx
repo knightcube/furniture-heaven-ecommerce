@@ -1,6 +1,8 @@
+import { Box } from "@mui/material"
+
 const RegistrationPage = () => {
   return (
-    <div>RegistrationPage</div>
+    <Box>RegistrationPage</Box> 
   )
 }
 

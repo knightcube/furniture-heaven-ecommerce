@@ -19,6 +19,7 @@ const FooterComponent: React.FC = () => {
       pt={10}
       pb={10}
       justifyContent={"center"}
+      
     >
       <Box>
         <Typography variant="h3" sx={{ color: "white" }}>
