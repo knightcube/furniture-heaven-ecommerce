@@ -50,6 +50,10 @@ This project aims to replicate the e-commerce functionality of popular furniture
    * [Vite](https://vitejs.dev/) (much faster than `create-react-app`)
 
 
+* Backend:
+   * [Flask]()
+
+
 ## Creative Stack
 
 * UI/UX Design:
@@ -60,3 +64,26 @@ This project aims to replicate the e-commerce functionality of popular furniture
 * 3D Modelling:
    * [Blender](http://blender.org/) - _I made a 3D Model of my own room in Blender👇_
    ![Mock up Design](https://github.com/knightcube/furniture-heaven-ecommerce/blob/main/client/src/assets/room_miniature_1.png?raw=true)
+
+# Configuration Steps
+These steps are required to run your project locally and also to start contributing if you wish to.🙂
+
+## Frontend
+
+## Backend
+* [How to setup your virtual environment?](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+* Download dependencies by running `pip install -r requirements.txt`
+* Add a new 3rd party library:-
+   * `pip install [LIBRARY_NAME]`
+   * `pip freeze > requirements.txt` 
+   * the last step above adds the library to the `requirements.txt` file directly
+
+# Repository Details
+I have segregated the branches according to various tech stacks that I have worked with.
+
+##  Branches
+* `main` - Main branch (live)
+* `flask-backend` (React + Flask)
+   * Contains code for the following tech stack:-
+      * Frontend - React
+      * Backend - Flask
