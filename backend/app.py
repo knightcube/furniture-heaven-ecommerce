@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-# from flask_smorest import abort
+from flask_smorest import Api, Blueprint, abort
 from dummy_db import stores,items
-# from resources.item import blp as ItemBlueprint
+from resources.item import blp as ItemBlueprint
 
 app = Flask(__name__)
 app.config["PROPOGATE_EXCEPTIONS"] = True
@@ -11,8 +11,8 @@ app.config["API_VERSION"] = "v1"
 app.config["OPENAPI_VERSION"] = "3.0.2"
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///market.db'
 # db = SQLAlchemy(app)
-# api = Api(app)
-# api.register_blueprint(ItemBlueprint)
+api = Api(app)
+api.register_blueprint(ItemBlueprint)
 
 @app.route("/")
 def hello_world():
