@@ -1,7 +1,7 @@
 # Furniture Heaven E-commerce
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=furniture-heaven-ecommerce-7gy9)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=furniture-heaven-ecommerce)
 
 [![GitHub Stars](https://img.shields.io/github/stars/knightcube/furniture-heaven-ecommerce.svg)](https://github.com/knightcube/furniture-heaven-ecommerce/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/knightcube/furniture-heaven-ecommerce.svg)](https://github.com/knightcube/furniture-heaven-ecommerce/network/members)
@@ -12,6 +12,16 @@
 
 ## What it looks like right now?
 ![Mock up Design](https://github.com/knightcube/furniture-heaven-ecommerce/blob/main/mockups/FurnitureHeaven.gif?raw=true)
+
+## Project Tech Stacks
+The repository contains code for different tech stacks in different branches:-
+* MERN stack Branch - [mern-stack](https://github.com/knightcube/furniture-heaven-ecommerce/tree/mern-stack)
+   * Frontend - React
+   * Backend - NodeJS, Express, MongoDB
+
+* Flask Backend Branch - [flask-backend](https://github.com/knightcube/furniture-heaven-ecommerce/tree/flask-backend)
+   * Frontend - React
+   * Backend - Flask (Python)
 
 ## Table of Contents
 
