@@ -1,18 +1,29 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dummyProducts from "../data/DummyData";
 import ProductCard from "../components/ProductCard";
 import HeaderNav from "../components/HeaderNav";
+import axios from "axios";
+
+const baseURL = "http://localhost:5000";
 
 const AllProducts: React.FC = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get(`${baseURL}/api/products`).then((response) => {
+      setProducts(response.data);
+    });
+  }, []);
+
   return (
     <Box>
-      <HeaderNav/>
+      <HeaderNav />
       <Box marginTop={10} marginBottom={2} textAlign={"center"}>
         <Typography variant="h3">All Products</Typography>
       </Box>
-      <Box display={"flex"} justifyContent={"center"} >
-        {dummyProducts.map((item, index) => {
+      <Box display={"flex"} justifyContent={"center"}>
+        {products.map((item, index) => {
           return (
             <Box key={index} marginRight={2} textAlign={"center"}>
               <ProductCard productItem={item}></ProductCard>
