@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import dummyProducts from "../data/DummyData";
 import ProductCard from "../components/ProductCard";
 import HeaderNav from "../components/HeaderNav";
 import axios from "axios";
