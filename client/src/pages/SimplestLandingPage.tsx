@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import HeaderNav from "../components/HeaderNav";
 
 const SimplestLandingPage: React.FC = () => {
@@ -8,30 +8,30 @@ const SimplestLandingPage: React.FC = () => {
       <HeaderNav/>
       <h1>Landing Page</h1>
       <ul>
-        <Link to="/home">
+        <NavLink to="/home">
           <li>Home</li>
-        </Link>
-        <Link to="/register">
+        </NavLink>
+        <NavLink to="/register">
           <li>Registration</li>
-        </Link>
-        <Link to="/login">
+        </NavLink>
+        <NavLink to="/login">
           <li>Log in</li>
-        </Link>
-        <Link to="/profile">
+        </NavLink>
+        <NavLink to="/profile">
           <li>Profile</li>
-        </Link>
-        <Link to="/products">
+        </NavLink>
+        <NavLink to="/products">
           <li>Products</li>
-        </Link>
-        <Link to="/details">
+        </NavLink>
+        <NavLink to="/products/details/:id">
           <li>Product Details</li>
-        </Link>
-        <Link to="/cart">
+        </NavLink>
+        <NavLink to="/cart">
           <li>Shopping Cart</li>
-        </Link>
-        <Link to="/checkout">
+        </NavLink>
+        <NavLink to="/checkout">
           <li>Checkout</li>
-        </Link>
+        </NavLink>
       </ul>
     </div>
   );
